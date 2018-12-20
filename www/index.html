@@ -45,6 +45,27 @@
 <body>
     <div><br><h2>Mhairi's Practise Helpr Video Screen!</h2><br></div>
 	 <!-- The embed's <iframe> will replace this <div> tag. -->
+	<script>
+	var permissions = cordova.plugins.permissions;
+	permissions.hasPermission(permissions.CAMERA, function( status ){
+		if ( status.hasPermission ) {
+			console.log("Yes :D ");
+		}
+		else {
+			console.warn("No :( ");
+		}
+		});
+		
+		permissions.requestPermission(permissions.CAMERA, success, error);
+		
+		function error() {
+		console.warn('Camera permission is not turned on');
+		}
+		
+		function success( status ) {
+		if( !status.hasPermission ) error();
+		}
+</script>
   <div id="myembed"></div>
  	
 <p>
