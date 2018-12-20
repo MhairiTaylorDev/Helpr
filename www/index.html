@@ -46,7 +46,17 @@
     <div><br><h2>Mhairi's Practise Helpr Video Screen!</h2><br></div>
 	 <!-- The embed's <iframe> will replace this <div> tag. -->
 	<script>
-	var permissions = cordova.plugins.permissions;
+	
+</script>
+  <div id="myembed"></div>
+ 	
+<p>
+  <button id="call-btn">Call</button>
+</p>
+ 
+<div id="myembed"></div>
+ <script>
+   var permissions = cordova.plugins.permissions;
 	permissions.hasPermission(permissions.CAMERA, function( status ){
 		if ( status.hasPermission ) {
 			console.log("Yes :D ");
@@ -65,19 +75,12 @@
 		function success( status ) {
 		if( !status.hasPermission ) error();
 		}
-</script>
-  <div id="myembed"></div>
- 	
-<p>
-  <button id="call-btn">Call</button>
-</p>
- 
-<div id="myembed"></div>
- 
+ </script>
 <script>
   var clientId = "demo";
  
   var tag = document.createElement("script");
+
   tag.src = "https://www.gruveo.com/embed-api/";
   var firstScriptTag = document.getElementsByTagName("script")[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -135,6 +138,11 @@
     }
   }
 </script>
+ <div class="col-md-8 col-md-offset-2" style="margin-top: 15px;">
+          <div id="myembed"></div>
+          <script src="script.js"></script>
+        </div>
+      </div>
 </body>
 
 </html>
