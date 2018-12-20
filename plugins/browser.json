@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.mhairi.helpr"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "XXXXXXX",
+            "PACKAGE_NAME": "com.mhairi.helpr"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.mhairi.helpr"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.mhairi.helpr"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.mhairi.helpr"
+        }
+    },
+    "dependent_plugins": {}
+}
